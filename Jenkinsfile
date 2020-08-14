@@ -7,7 +7,7 @@ pipeline {
                 sh 'python --version'
                 sh 'echo "jenkinsfile build"'
                 sh 'ls -lah'
-                sh 'docker build -t hello-jjpyworld ."
+                sh 'docker build -t hello-jjpyworld . '
             }
         }
     }
