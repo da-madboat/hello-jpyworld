@@ -1,6 +1,10 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    //agent { docker { image 'python:3.5.1' } }
     //agent any
+    agent 
+    {
+		label 'dockerEquipped'
+	}
     stages {
         stage('build') {
             steps {
